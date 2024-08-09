@@ -1,0 +1,176 @@
+﻿
+@model Fornecedor
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Detalhes do Fornecedor</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet"> 
+    <style>
+        body {
+            font-family: 'Lato', sans-serif; 
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Detalhes do Fornecedor</h1>
+
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title">Informações do Fornecedor</h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p><strong>Nome:</strong> @Model.Nome</p>
+                        <p><strong>CNPJ:</strong> @Model.CNPJ</p>
+                        <p><strong>Segmento:</strong> @Model.Segmento</p>
+                        <p><strong>CEP:</strong> @Model.CEP</p>
+                        <p><strong>Endereço:</strong> @Model.Endereco</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p><strong>Foto:</strong></p>
+                        <img src="@Model.FotoPath" alt="Foto do Fornecedor" class="img-fluid rounded" />
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <button class="btn btn-primary" data-toggle="collapse" data-target="#editCard">Editar</button>
+                    <button class="btn btn-danger" onclick="deleteFornecedor('@Model.Id')">Excluir</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="editCard" class="collapse mt-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Editar Informações do Fornecedor</h5>
+                    <form id="editForm">
+                        <div class="form-group">
+                            <label for="Nome">Nome</label>
+                            <input type="text" class="form-control" id="Nome" value="@Html.Raw(@Model.Nome)" maxlength="100">
+                        </div>
+                        <div class="form-group">
+                            <label for="CNPJ">CNPJ</label>
+                            <input type="text" class="form-control" id="CNPJ" value="@Html.Raw(@Model.CNPJ)" maxlength="14">
+                        </div>
+                        <div class="form-group">
+                            <label for="Segmento">Segmento</label>
+                            <select class="form-control" id="Segmento">
+                                <option value="Comércio">Comércio</option>
+                                <option value="Serviço" >Serviço</option>
+                                <option value="Indústria">Indústria</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="CEP">CEP</label>
+                            <input type="text" class="form-control" id="CEP" value="@Html.Raw(@Model.CEP)" maxlength="8">
+                        </div>
+                        <div class="form-group">
+                            <label for="Endereco">Endereço</label>
+                            <input type="text" class="form-control" id="Endereco" value="@Html.Raw(@Model.Endereco)" maxlength="255" readonly>
+                        </div>
+                        <button type="button" class="btn btn-success" onclick="saveChanges('@Model.Id')">Salvar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById('editForm');
+
+        async function saveChanges(id) {
+            const fornecedor = {
+                Id: id,
+                Nome: form.Nome.value,
+                CNPJ: form.CNPJ.value,
+                Segmento: form.Segmento.value,
+                CEP: form.CEP.value,
+                Endereco: form.Endereco.value
+            };
+
+            const url = 'https://localhost:7031/Fornecedor/Details';
+
+            try {
+                const response = await fetch(url, {
+                    method: 'PUT',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(fornecedor)
+                });
+
+                if (!response.ok) {
+                    const errorText = await response.text();
+                    throw new Error('Erro ao atualizar fornecedor: ' + errorText);
+                }
+
+                const data = await response.json();
+                console.log('Fornecedor atualizado:', data);
+
+
+                location.reload();
+            } catch (error) {
+                console.error(error);
+                alert('Falha ao atualizar fornecedor.');
+            }
+        }
+
+        async function deleteFornecedor(id) {
+            const url = `https://localhost:7031/Fornecedor/Details/${id}`;
+
+            try {
+                const response = await fetch(url, {
+                    method: 'DELETE',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                });
+
+                if (response.status !== 204) {
+                    throw new Error('Erro ao excluir fornecedor: ' + response.statusText);
+                }
+
+                console.log('Fornecedor excluído com sucesso!');
+                
+                window.location.href = '/Usuario/Login';
+
+            } catch (error) {
+                console.error(error);
+            }
+        }
+
+        $(document).ready(function () {
+            $('#CEP').on('blur', function () {
+                console.log("ta indo");
+                var cep = $(this).val().replace(/\D/g, '');
+
+                if (cep !== "") {
+                    var validacep = /^[0-9]{8}$/;
+                    if (validacep.test(cep)) {
+                        $.getJSON("https://viacep.com.br/ws/" + cep + "/json/?callback=?", function (dados) {
+                            if (!("erro" in dados)) {
+                                $('#Endereco').val(dados.logradouro + ', ' + dados.bairro + ', ' + dados.localidade + ' - ' + dados.uf);
+                            } else {
+                                alert("CEP não encontrado.");
+                                $('#Endereco').val('');
+                            }
+                        });
+                    } else {
+                        alert("Formato de CEP inválido.");
+                        $('#Endereco').val('');
+                    }
+                } else {
+                    $('#Endereco').val('');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

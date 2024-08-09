@@ -1,0 +1,175 @@
+﻿@model IEnumerable<Fornecedor>
+
+@{
+    ViewData["Title"] = "Fornecedores";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Detalhes do Fornecedor</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif; 
+        }
+        </style>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Fornecedores Cadastrados</h1>
+        <div class="row">
+            @foreach (var fornecedor in Model)
+            {
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="card-title">@fornecedor.Nome</h5>
+                        </div>
+                        <div class="card-body">
+                            <p><strong>CNPJ:</strong> @fornecedor.CNPJ</p>
+                            <p><strong>Segmento:</strong> @fornecedor.Segmento</p>
+                            <p><strong>CEP:</strong> @fornecedor.CEP</p>
+                            <p><strong>Endereço:</strong> @fornecedor.Endereco</p>
+                            <img src="@fornecedor.FotoPath" alt="Foto do Fornecedor" class="img-fluid rounded mb-2" />
+                            <button class="btn btn-primary" data-toggle="collapse" data-target="#editCard_@fornecedor.Id">Editar</button>
+                            <button class="btn btn-danger " onclick="deleteFornecedor('@fornecedor.Id')">Excluir</button>
+                            <div id="editCard_@fornecedor.Id" class="collapse mt-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Editar Informações do Fornecedor</h5>
+                                        <form id="editForm_@fornecedor.Id">
+                                            <div class="form-group">
+                                                <label for="Nome_@fornecedor.Id">Nome</label>
+                                                <input type="text" class="form-control" id="Nome_@fornecedor.Id" value="@fornecedor.Nome" maxlength="100">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="CNPJ_@fornecedor.Id">CNPJ</label>
+                                                <input type="text" class="form-control" id="CNPJ_@fornecedor.Id" value="@fornecedor.CNPJ" maxlength="14">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="Segmento_@fornecedor.Id">Segmento</label>
+                                                <select class="form-control" id="Segmento_@fornecedor.Id">
+                                                    <option value="Comércio">Comércio</option>
+                                                    <option value="Serviço">Serviço</option>
+                                                    <option value="Indústria">Indústria</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="CEP_@fornecedor.Id">CEP</label>
+                                                <input type="text" class="form-control" id="CEP_@fornecedor.Id" value="@fornecedor.CEP" maxlength="8">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="Endereco_@fornecedor.Id">Endereço</label>
+                                                <input type="text" class="form-control" id="Endereco_@fornecedor.Id" value="@fornecedor.Endereco" maxlength="255" readonly>
+                                            </div>
+                                            <button type="button" class="btn btn-success" onclick="saveChanges('@fornecedor.Id')">Salvar</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+    <script>
+       
+        async function saveChanges(id) {
+            const form = document.getElementById(`editForm_${id}`);
+
+            const fornecedor = {
+                Id: id,
+                Nome: form.querySelector(`#Nome_${id}`).value,
+                CNPJ: form.querySelector(`#CNPJ_${id}`).value,
+                Segmento: form.querySelector(`#Segmento_${id}`).value,
+                CEP: form.querySelector(`#CEP_${id}`).value,
+                Endereco: form.querySelector(`#Endereco_${id}`).value
+            };
+
+            console.log(fornecedor.Endereco);
+
+            const url = `https://localhost:7031/Fornecedor/Details`;
+
+            try {
+                const response = await fetch(url, {
+                    method: 'PUT',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(fornecedor)
+                });
+
+                if (!response.ok) {
+                    const errorText = await response.text();
+                    throw new Error('Erro ao atualizar fornecedor: ' + errorText);
+                }
+
+                const data = await response.json();
+                console.log('Fornecedor atualizado:', data);
+
+                location.reload(); 
+            } catch (error) {
+                console.error(error);
+                alert('Falha ao atualizar fornecedor.');
+            }
+        }
+
+        async function deleteFornecedor(id) {
+            const url = `https://localhost:7031/Fornecedor/Details/${id}`; 
+
+            try {
+                const response = await fetch(url, {
+                    method: 'DELETE',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                });
+
+                if (!response.ok) {
+                    const errorText = await response.text();
+                    throw new Error('Erro ao excluir fornecedor: ' + errorText);
+                }
+
+                console.log('Fornecedor excluído com sucesso');
+                location.reload(); 
+            } catch (error) {
+                console.error(error);
+                alert('Falha ao excluir fornecedor.');
+            }
+        }
+
+        $(document).ready(function () {
+            $('.form-control[id^=CEP]').on('blur', function () {
+                const id = $(this).attr('id').split('_')[1]; 
+                const cep = $(this).val().replace(/\D/g, '');
+
+                if (cep !== "") {
+                    const validacep = /^[0-9]{8}$/;
+                    if (validacep.test(cep)) {
+                        $.getJSON("https://viacep.com.br/ws/" + cep + "/json/?callback=?", function (dados) {
+                            if (!("erro" in dados)) {
+                                $(`#Endereco_${id}`).val(dados.logradouro + ', ' + dados.bairro + ', ' + dados.localidade + ' - ' + dados.uf);
+                            } else {
+                                alert("CEP não encontrado.");
+                                $(`#Endereco_${id}`).val('');
+                            }
+                        });
+                    } else {
+                        alert("Formato de CEP inválido.");
+                        $(`#Endereco_${id}`).val('');
+                    }
+                } else {
+                    $(`#Endereco_${id}`).val('');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

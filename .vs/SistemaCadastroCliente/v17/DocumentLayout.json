@@ -1,0 +1,268 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\bielr\\source\\repos\\SistemaCadastroCliente\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/SistemaCadastroCliente/True/SqlTable/dbo.AspNetUsers.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68E7710E-DB97-4440-857B-4D3E7EE36BD1}|SistemaCadastroCliente\\SistemaCadastroCliente.csproj|c:\\users\\bielr\\source\\repos\\sistemacadastrocliente\\sistemacadastrocliente\\services\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68E7710E-DB97-4440-857B-4D3E7EE36BD1}|SistemaCadastroCliente\\SistemaCadastroCliente.csproj|solutionrelative:sistemacadastrocliente\\services\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68E7710E-DB97-4440-857B-4D3E7EE36BD1}|SistemaCadastroCliente\\SistemaCadastroCliente.csproj|c:\\users\\bielr\\source\\repos\\sistemacadastrocliente\\sistemacadastrocliente\\services\\fornecedorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68E7710E-DB97-4440-857B-4D3E7EE36BD1}|SistemaCadastroCliente\\SistemaCadastroCliente.csproj|solutionrelative:sistemacadastrocliente\\services\\fornecedorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68E7710E-DB97-4440-857B-4D3E7EE36BD1}|SistemaCadastroCliente\\SistemaCadastroCliente.csproj|c:\\users\\bielr\\source\\repos\\sistemacadastrocliente\\sistemacadastrocliente\\data\\dtos\\createfornecedordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68E7710E-DB97-4440-857B-4D3E7EE36BD1}|SistemaCadastroCliente\\SistemaCadastroCliente.csproj|solutionrelative:sistemacadastrocliente\\data\\dtos\\createfornecedordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68E7710E-DB97-4440-857B-4D3E7EE36BD1}|SistemaCadastroCliente\\SistemaCadastroCliente.csproj|c:\\users\\bielr\\source\\repos\\sistemacadastrocliente\\sistemacadastrocliente\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68E7710E-DB97-4440-857B-4D3E7EE36BD1}|SistemaCadastroCliente\\SistemaCadastroCliente.csproj|solutionrelative:sistemacadastrocliente\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68E7710E-DB97-4440-857B-4D3E7EE36BD1}|SistemaCadastroCliente\\SistemaCadastroCliente.csproj|c:\\users\\bielr\\source\\repos\\sistemacadastrocliente\\sistemacadastrocliente\\controllers\\fornecedorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68E7710E-DB97-4440-857B-4D3E7EE36BD1}|SistemaCadastroCliente\\SistemaCadastroCliente.csproj|solutionrelative:sistemacadastrocliente\\controllers\\fornecedorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68E7710E-DB97-4440-857B-4D3E7EE36BD1}|SistemaCadastroCliente\\SistemaCadastroCliente.csproj|c:\\users\\bielr\\source\\repos\\sistemacadastrocliente\\sistemacadastrocliente\\views\\fornecedor\\listdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{68E7710E-DB97-4440-857B-4D3E7EE36BD1}|SistemaCadastroCliente\\SistemaCadastroCliente.csproj|solutionrelative:sistemacadastrocliente\\views\\fornecedor\\listdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68E7710E-DB97-4440-857B-4D3E7EE36BD1}|SistemaCadastroCliente\\SistemaCadastroCliente.csproj|c:\\users\\bielr\\source\\repos\\sistemacadastrocliente\\sistemacadastrocliente\\views\\fornecedor\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{68E7710E-DB97-4440-857B-4D3E7EE36BD1}|SistemaCadastroCliente\\SistemaCadastroCliente.csproj|solutionrelative:sistemacadastrocliente\\views\\fornecedor\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68E7710E-DB97-4440-857B-4D3E7EE36BD1}|SistemaCadastroCliente\\SistemaCadastroCliente.csproj|c:\\users\\bielr\\source\\repos\\sistemacadastrocliente\\sistemacadastrocliente\\views\\usuario\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{68E7710E-DB97-4440-857B-4D3E7EE36BD1}|SistemaCadastroCliente\\SistemaCadastroCliente.csproj|solutionrelative:sistemacadastrocliente\\views\\usuario\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68E7710E-DB97-4440-857B-4D3E7EE36BD1}|SistemaCadastroCliente\\SistemaCadastroCliente.csproj|c:\\users\\bielr\\source\\repos\\sistemacadastrocliente\\sistemacadastrocliente\\views\\usuario\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{68E7710E-DB97-4440-857B-4D3E7EE36BD1}|SistemaCadastroCliente\\SistemaCadastroCliente.csproj|solutionrelative:sistemacadastrocliente\\views\\usuario\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68E7710E-DB97-4440-857B-4D3E7EE36BD1}|SistemaCadastroCliente\\SistemaCadastroCliente.csproj|c:\\users\\bielr\\source\\repos\\sistemacadastrocliente\\sistemacadastrocliente\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{68E7710E-DB97-4440-857B-4D3E7EE36BD1}|SistemaCadastroCliente\\SistemaCadastroCliente.csproj|solutionrelative:sistemacadastrocliente\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68E7710E-DB97-4440-857B-4D3E7EE36BD1}|SistemaCadastroCliente\\SistemaCadastroCliente.csproj|c:\\users\\bielr\\source\\repos\\sistemacadastrocliente\\sistemacadastrocliente\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68E7710E-DB97-4440-857B-4D3E7EE36BD1}|SistemaCadastroCliente\\SistemaCadastroCliente.csproj|solutionrelative:sistemacadastrocliente\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68E7710E-DB97-4440-857B-4D3E7EE36BD1}|SistemaCadastroCliente\\SistemaCadastroCliente.csproj|c:\\users\\bielr\\source\\repos\\sistemacadastrocliente\\sistemacadastrocliente\\models\\fornecedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68E7710E-DB97-4440-857B-4D3E7EE36BD1}|SistemaCadastroCliente\\SistemaCadastroCliente.csproj|solutionrelative:sistemacadastrocliente\\models\\fornecedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68E7710E-DB97-4440-857B-4D3E7EE36BD1}|SistemaCadastroCliente\\SistemaCadastroCliente.csproj|c:\\users\\bielr\\source\\repos\\sistemacadastrocliente\\sistemacadastrocliente\\migrations\\20240808235459_adi\u00E7\u00E3o foto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68E7710E-DB97-4440-857B-4D3E7EE36BD1}|SistemaCadastroCliente\\SistemaCadastroCliente.csproj|solutionrelative:sistemacadastrocliente\\migrations\\20240808235459_adi\u00E7\u00E3o foto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68E7710E-DB97-4440-857B-4D3E7EE36BD1}|SistemaCadastroCliente\\SistemaCadastroCliente.csproj|c:\\users\\bielr\\source\\repos\\sistemacadastrocliente\\sistemacadastrocliente\\data\\dtos\\readfornecedordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68E7710E-DB97-4440-857B-4D3E7EE36BD1}|SistemaCadastroCliente\\SistemaCadastroCliente.csproj|solutionrelative:sistemacadastrocliente\\data\\dtos\\readfornecedordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ListDetails.cshtml",
+              "DocumentMoniker": "C:\\Users\\bielr\\source\\repos\\SistemaCadastroCliente\\SistemaCadastroCliente\\Views\\Fornecedor\\ListDetails.cshtml",
+              "RelativeDocumentMoniker": "SistemaCadastroCliente\\Views\\Fornecedor\\ListDetails.cshtml",
+              "ToolTip": "C:\\Users\\bielr\\source\\repos\\SistemaCadastroCliente\\SistemaCadastroCliente\\Views\\Fornecedor\\ListDetails.cshtml",
+              "RelativeToolTip": "SistemaCadastroCliente\\Views\\Fornecedor\\ListDetails.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-09T01:40:53.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UsuarioService.cs",
+              "DocumentMoniker": "C:\\Users\\bielr\\source\\repos\\SistemaCadastroCliente\\SistemaCadastroCliente\\Services\\UsuarioService.cs",
+              "RelativeDocumentMoniker": "SistemaCadastroCliente\\Services\\UsuarioService.cs",
+              "ToolTip": "C:\\Users\\bielr\\source\\repos\\SistemaCadastroCliente\\SistemaCadastroCliente\\Services\\UsuarioService.cs",
+              "RelativeToolTip": "SistemaCadastroCliente\\Services\\UsuarioService.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAYwCkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T23:43:43.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\bielr\\source\\repos\\SistemaCadastroCliente\\SistemaCadastroCliente\\Views\\Usuario\\Register.cshtml",
+              "RelativeDocumentMoniker": "SistemaCadastroCliente\\Views\\Usuario\\Register.cshtml",
+              "ToolTip": "C:\\Users\\bielr\\source\\repos\\SistemaCadastroCliente\\SistemaCadastroCliente\\Views\\Usuario\\Register.cshtml",
+              "RelativeToolTip": "SistemaCadastroCliente\\Views\\Usuario\\Register.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-08T23:38:53.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\bielr\\source\\repos\\SistemaCadastroCliente\\SistemaCadastroCliente\\Views\\Fornecedor\\Details.cshtml",
+              "RelativeDocumentMoniker": "SistemaCadastroCliente\\Views\\Fornecedor\\Details.cshtml",
+              "ToolTip": "C:\\Users\\bielr\\source\\repos\\SistemaCadastroCliente\\SistemaCadastroCliente\\Views\\Fornecedor\\Details.cshtml",
+              "RelativeToolTip": "SistemaCadastroCliente\\Views\\Fornecedor\\Details.cshtml",
+              "ViewState": "AQIAAI0AAAAAAAAAAAAAAAkAAABrAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-08T20:24:24.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FornecedorController.cs",
+              "DocumentMoniker": "C:\\Users\\bielr\\source\\repos\\SistemaCadastroCliente\\SistemaCadastroCliente\\Controllers\\FornecedorController.cs",
+              "RelativeDocumentMoniker": "SistemaCadastroCliente\\Controllers\\FornecedorController.cs",
+              "ToolTip": "C:\\Users\\bielr\\source\\repos\\SistemaCadastroCliente\\SistemaCadastroCliente\\Controllers\\FornecedorController.cs",
+              "RelativeToolTip": "SistemaCadastroCliente\\Controllers\\FornecedorController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T20:23:37.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\bielr\\source\\repos\\SistemaCadastroCliente\\SistemaCadastroCliente\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "SistemaCadastroCliente\\Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\bielr\\source\\repos\\SistemaCadastroCliente\\SistemaCadastroCliente\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "SistemaCadastroCliente\\Controllers\\UsuarioController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB8AAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T23:44:51.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CreateFornecedorDto.cs",
+              "DocumentMoniker": "C:\\Users\\bielr\\source\\repos\\SistemaCadastroCliente\\SistemaCadastroCliente\\Data\\DTOs\\CreateFornecedorDto.cs",
+              "RelativeDocumentMoniker": "SistemaCadastroCliente\\Data\\DTOs\\CreateFornecedorDto.cs",
+              "ToolTip": "C:\\Users\\bielr\\source\\repos\\SistemaCadastroCliente\\SistemaCadastroCliente\\Data\\DTOs\\CreateFornecedorDto.cs",
+              "RelativeToolTip": "SistemaCadastroCliente\\Data\\DTOs\\CreateFornecedorDto.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwCMAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T23:40:20.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\bielr\\source\\repos\\SistemaCadastroCliente\\SistemaCadastroCliente\\Views\\Usuario\\Login.cshtml",
+              "RelativeDocumentMoniker": "SistemaCadastroCliente\\Views\\Usuario\\Login.cshtml",
+              "ToolTip": "C:\\Users\\bielr\\source\\repos\\SistemaCadastroCliente\\SistemaCadastroCliente\\Views\\Usuario\\Login.cshtml",
+              "RelativeToolTip": "SistemaCadastroCliente\\Views\\Usuario\\Login.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-08T23:58:36.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FornecedorService.cs",
+              "DocumentMoniker": "C:\\Users\\bielr\\source\\repos\\SistemaCadastroCliente\\SistemaCadastroCliente\\Services\\FornecedorService.cs",
+              "RelativeDocumentMoniker": "SistemaCadastroCliente\\Services\\FornecedorService.cs",
+              "ToolTip": "C:\\Users\\bielr\\source\\repos\\SistemaCadastroCliente\\SistemaCadastroCliente\\Services\\FornecedorService.cs",
+              "RelativeToolTip": "SistemaCadastroCliente\\Services\\FornecedorService.cs",
+              "ViewState": "AQIAAFMAAAAAAAAAAAAvwF0AAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T14:50:44.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "dbo.AspNetUsers [Dados]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/SistemaCadastroCliente/True/SqlTable/dbo.AspNetUsers.sql",
+              "ToolTip": "dbo.AspNetUsers [Dados]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-08-08T23:35:14.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\bielr\\source\\repos\\SistemaCadastroCliente\\SistemaCadastroCliente\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "SistemaCadastroCliente\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\bielr\\source\\repos\\SistemaCadastroCliente\\SistemaCadastroCliente\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "SistemaCadastroCliente\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABrAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-09T15:24:26.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Fornecedor.cs",
+              "DocumentMoniker": "C:\\Users\\bielr\\source\\repos\\SistemaCadastroCliente\\SistemaCadastroCliente\\Models\\Fornecedor.cs",
+              "RelativeDocumentMoniker": "SistemaCadastroCliente\\Models\\Fornecedor.cs",
+              "ToolTip": "C:\\Users\\bielr\\source\\repos\\SistemaCadastroCliente\\SistemaCadastroCliente\\Models\\Fornecedor.cs",
+              "RelativeToolTip": "SistemaCadastroCliente\\Models\\Fornecedor.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T20:04:25.332Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "20240808235459_Adi\u00E7\u00E3o foto.cs",
+              "DocumentMoniker": "C:\\Users\\bielr\\source\\repos\\SistemaCadastroCliente\\SistemaCadastroCliente\\Migrations\\20240808235459_Adi\u00E7\u00E3o foto.cs",
+              "RelativeDocumentMoniker": "SistemaCadastroCliente\\Migrations\\20240808235459_Adi\u00E7\u00E3o foto.cs",
+              "ToolTip": "C:\\Users\\bielr\\source\\repos\\SistemaCadastroCliente\\SistemaCadastroCliente\\Migrations\\20240808235459_Adi\u00E7\u00E3o foto.cs",
+              "RelativeToolTip": "SistemaCadastroCliente\\Migrations\\20240808235459_Adi\u00E7\u00E3o foto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T23:54:59.426Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\bielr\\source\\repos\\SistemaCadastroCliente\\SistemaCadastroCliente\\Program.cs",
+              "RelativeDocumentMoniker": "SistemaCadastroCliente\\Program.cs",
+              "ToolTip": "C:\\Users\\bielr\\source\\repos\\SistemaCadastroCliente\\SistemaCadastroCliente\\Program.cs",
+              "RelativeToolTip": "SistemaCadastroCliente\\Program.cs",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAAAHwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T00:30:00.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ReadFornecedorDto.cs",
+              "DocumentMoniker": "C:\\Users\\bielr\\source\\repos\\SistemaCadastroCliente\\SistemaCadastroCliente\\Data\\DTOs\\ReadFornecedorDto.cs",
+              "RelativeDocumentMoniker": "SistemaCadastroCliente\\Data\\DTOs\\ReadFornecedorDto.cs",
+              "ToolTip": "C:\\Users\\bielr\\source\\repos\\SistemaCadastroCliente\\SistemaCadastroCliente\\Data\\DTOs\\ReadFornecedorDto.cs",
+              "RelativeToolTip": "SistemaCadastroCliente\\Data\\DTOs\\ReadFornecedorDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T23:40:31.16Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
